@@ -31,6 +31,7 @@ $stickyClueHeight: $stickyClueVerticalPadding * 2 + ($stickyClueLineHeight * $st
     // Needs its own layer so we don't keep repainting when the top value is
     // updated by JS
     will-change: transform;
+    outline-color: white;
 
     // Mobile only
     @include mq(tablet) {
@@ -58,6 +59,8 @@ $stickyClueHeight: $stickyClueVerticalPadding * 2 + ($stickyClueLineHeight * $st
     padding-bottom: $stickyClueVerticalPadding;
     display: table;
     width: 100%;
+    font-size: 1rem;
+    color: $brightness-20;
 }
 
 .crossword__sticky-clue__direction {

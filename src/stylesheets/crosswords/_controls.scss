@@ -5,6 +5,9 @@
     .button {
         @include fs-textSans(4);
         margin-bottom: $gs-baseline;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 0.8rem;
     }
 
     .button--primary {
@@ -23,7 +26,7 @@
     .button--secondary {
         color: $brightness-46;
         background: $brightness-93;
-        border: 1px solid $brightness-93;
+        border: 1px solid $brightness-60;
         &:hover,
         &:visited,
         &:focus {

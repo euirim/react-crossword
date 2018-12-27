@@ -19,6 +19,7 @@
         color: $lifestyle-main;
         border: 1px solid $lifestyle-main;
         text-transform: uppercase;
+        cursor: pointer;
         &:hover,
         &:visited,
         &:focus {
@@ -31,11 +32,14 @@
         background: transparent;
         border: 1px solid $brightness-20;
         color: $brightness-20;
+        text-transform: uppercase;
+        cursor: pointer;
         &:hover,
         &:visited,
         &:focus {
-            background-color: transparent;
-            border-color: darken($brightness-86, 15%);
+            background-color: $brightness-20;
+            border: 1px solid $brightness-20;
+            color: $brightness-100;
         }
     }
 
