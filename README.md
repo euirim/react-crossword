@@ -1,8 +1,6 @@
 # React Crossword
 
-This is a React crossword component extracted from the [Guardian Frontend application](https://github.com/guardian/frontend).
-
-[Package on NPM](https://www.npmjs.com/package/react-crossword).
+This is a React crossword component extracted from the [Guardian Frontend application](https://github.com/guardian/frontend). It was updated to match the needs and visual style of *The Chicago Maroon.*
 
 ![Example of React Crossword](https://chriszetter.com/assets/react-crossword/react-crossword-example.png)
 
