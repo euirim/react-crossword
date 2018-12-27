@@ -19,7 +19,7 @@
 
 .crossword__cell-number,
 .crossword__cell-text {
-    fill: #000000;
+    fill: $brightness-20;
     font-family: $f-sans-serif-text;
 }
 
@@ -35,10 +35,10 @@
 
     @each $xword, $cells in $xword-grid-sizes {
         .crossword__container--#{$xword} & {
-            font-size: ceil(1.2px * $cells);
+            font-size: ceil(1.3px * $cells);
 
             @include mq(tablet) {
-                font-size: 1.1px * $cells;
+                font-size: 1.3px * $cells;
             }
         }
     }

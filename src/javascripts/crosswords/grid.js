@@ -1,8 +1,9 @@
-import React from 'react';
-import { gridSize, clueMapKey } from 'crosswords/helpers';
-import { constants } from 'crosswords/constants';
+import { clueMapKey, gridSize } from 'crosswords/helpers';
+
 import GridCell from 'crosswords/cell';
+import React from 'react';
 import { classNames } from 'crosswords/classNames';
+import { constants } from 'crosswords/constants';
 
 // Position at end of previous cell
 const createWordSeparator = (x, y, direction) => {
@@ -141,6 +142,7 @@ export const Grid = (props) => {
         width={width}
         height={height}
         className="crossword__grid-background"
+        style={{fill: 'rgb(42,44,48)'}}
       />
       {cells}
       <g className="crossword__grid__separators">{separators}</g>

@@ -3,6 +3,7 @@
     border-bottom: 1px solid #e1e4e8;
     padding-bottom: $gs-baseline * .75;
     text-transform: uppercase;
+    color: $brightness-20;
 }
 
 .crossword__clues-list, ol.crossword__clues-list {
@@ -35,6 +36,7 @@
 .crossword__clue__number,
 .crossword__clue__text {
     display: table-cell;
+    color: $brightness-20;
 }
 
 .crossword__clue__number {
@@ -58,7 +60,7 @@
 }
 
 .crossword__clue--answered {
-    color: $brightness-46;
+    color: $brightness-60;
 }
 
 //For grouped clues we display 11.12,23 accross instead of just a number
