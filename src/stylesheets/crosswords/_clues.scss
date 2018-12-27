@@ -1,6 +1,6 @@
 .crossword__clues-header {
     @include fs-header(1);
-    border-bottom: 1px dotted $brightness-86;
+    border-bottom: 1px solid #e1e4e8;
     padding-bottom: $gs-baseline * .75;
     text-transform: uppercase;
 }
@@ -49,7 +49,7 @@
 }
 
 .crossword__clue--selected {
-    background-color: $xword-focussed-background-colour;
+    background-color: $xword-highlight-colour;
 
     > * {
         font-weight: bold;

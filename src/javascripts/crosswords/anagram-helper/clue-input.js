@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { findDOMNode } from 'react-dom';
 
 class ClueInput extends Component {
@@ -40,7 +41,7 @@ class ClueInput extends Component {
       <input
         type="text"
         className="crossword__anagram-helper__clue-input"
-        placeholder="Enter letters"
+        placeholder="Enter Letters"
         maxLength={this.props.clue.length}
         value={this.props.value}
         onChange={this.onInputChange.bind(this)}

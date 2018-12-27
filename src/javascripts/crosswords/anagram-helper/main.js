@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import closeCentralIcon from 'svgs/close.svg';
 import { cellsForClue, getAnagramClueData } from 'crosswords/helpers';
-import shuffle from 'lodash/shuffle';
+
 import { ClueInput } from './clue-input';
 import { CluePreview } from './clue-preview';
 import { Ring } from './ring';
+import closeCentralIcon from 'svgs/close.svg';
+import shuffle from 'lodash/shuffle';
 
 class AnagramHelper extends Component {
   constructor() {
@@ -131,6 +132,12 @@ class AnagramHelper extends Component {
           dangerouslySetInnerHTML={closeIcon}
           data-link-name="Close"
         />
+        <CluePreview
+          clue={clue}
+          entries={this.entries()}
+          letters={this.state.letters}
+          hasShuffled={!this.state.showInput}
+        />
         <button
           className={`button button--large ${
             !this.state.clueInput ? 'button--tertiary' : ''
@@ -138,7 +145,7 @@ class AnagramHelper extends Component {
           onClick={this.reset.bind(this)}
           data-link-name="Start Again"
         >
-                    start again
+                    Restart
         </button>
         <button
           className={`button button--large ${
@@ -147,14 +154,9 @@ class AnagramHelper extends Component {
           onClick={this.shuffle.bind(this)}
           data-link-name="Shuffle"
         >
-                    shuffle
+                    Shuffle
         </button>
-        <CluePreview
-          clue={clue}
-          entries={this.entries()}
-          letters={this.state.letters}
-          hasShuffled={!this.state.showInput}
-        />
+
       </div>
     );
   }
