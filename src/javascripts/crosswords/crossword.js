@@ -1,40 +1,42 @@
 import 'main.scss';
+
 import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
-import fastdom from 'fastdom';
-import $ from 'lib/$';
-import mediator from 'lib/mediator';
-import { isBreakpoint } from 'lib/detect';
-import { scrollTo } from 'lib/scroller';
-import { addEventListener } from 'lib/events';
-import { AnagramHelper } from 'crosswords/anagram-helper/main';
-import debounce from 'lodash/debounce';
-import zip from 'lodash/zip';
-import { Clues } from 'crosswords/clues';
-import { Controls } from 'crosswords/controls';
-import { HiddenInput } from 'crosswords/hidden-input';
-import { Grid } from 'crosswords/grid';
 import {
   buildClueMap,
   buildGrid,
-  otherDirection,
-  entryHasCell,
-  cluesFor,
-  mapGrid,
-  getClearableCellsForClue,
-  getLastCellInClue,
-  getPreviousClueInGroup,
-  isFirstCellInClue,
-  getNextClueInGroup,
-  isLastCellInClue,
-  gridSize,
-  checkClueHasBeenAnswered,
   buildSeparatorMap,
   cellsForEntry,
+  checkClueHasBeenAnswered,
+  cluesFor,
+  entryHasCell,
+  getClearableCellsForClue,
+  getLastCellInClue,
+  getNextClueInGroup,
+  getPreviousClueInGroup,
+  gridSize,
+  isFirstCellInClue,
+  isLastCellInClue,
+  mapGrid,
+  otherDirection,
 } from 'crosswords/helpers';
-import { keycodes } from 'crosswords/keycodes';
-import { saveGridState, loadGridState } from 'crosswords/persistence';
+import { loadGridState, saveGridState } from 'crosswords/persistence';
+
+import $ from 'lib/$';
+import { AnagramHelper } from 'crosswords/anagram-helper/main';
+import { Clues } from 'crosswords/clues';
+import { Controls } from 'crosswords/controls';
+import { Grid } from 'crosswords/grid';
+import { HiddenInput } from 'crosswords/hidden-input';
+import { addEventListener } from 'lib/events';
 import { classNames } from 'crosswords/classNames';
+import debounce from 'lodash/debounce';
+import fastdom from 'fastdom';
+import { findDOMNode } from 'react-dom';
+import { isBreakpoint } from 'lib/detect';
+import { keycodes } from 'crosswords/keycodes';
+import mediator from 'lib/mediator';
+import { scrollTo } from 'lib/scroller';
+import zip from 'lodash/zip';
 
 class Crossword extends Component {
   constructor(props) {
