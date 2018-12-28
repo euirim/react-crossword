@@ -1,6 +1,6 @@
 {
-  "name": "react-crossword",
-  "version": "0.1.7",
+  "name": "@chicagomaroon/react-crossword",
+  "version": "1.0.0",
   "author": "Euirim Choi",
   "private": false,
   "dependencies": {
