@@ -1,5 +1,5 @@
 const constants = {
-  cellSize: 38,
+  cellSize: 33,
   borderSize: 1,
   numberSize: 9,
 };
