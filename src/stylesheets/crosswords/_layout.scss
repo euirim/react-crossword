@@ -65,7 +65,7 @@ $cells in $xword-grid-sizes {
 
     & .crossword__clues--wrapper,
     & .crossword__clues {
-        @include mq($from: tablet, $until: leftCol) {
+        @include mq($from: tablet) {
             height: xword-grid-dimensions(15) + ($gs-baseline * 10);
         }
     }
