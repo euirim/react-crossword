@@ -72,7 +72,6 @@ class Clues extends Component {
     if (
       isBreakpoint({
         min: 'tablet',
-        max: 'leftCol',
       })
             && (this.props.focussed
                 && (!prev.focussed || prev.focussed.id !== this.props.focussed.id))
