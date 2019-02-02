@@ -70,7 +70,7 @@ $cells in $xword-grid-sizes {
         }
     }
 
-    @include mq($from: tablet, $until: leftCol) {
+    @include mq($from: tablet) {
         & .crossword__clues {
             position: relative;
             overflow-y: scroll;
