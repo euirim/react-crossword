@@ -715,7 +715,7 @@ class Crossword extends Component {
 
   saveGrid() {
     const entries = this.state.grid.map(row => row.map(cell => cell.value));
-    this.props.saveGrid(this.props.id, entries);
+    this.props.saveGrid(this.props.data.id, entries);
   }
 
   render() {
